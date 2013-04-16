@@ -194,7 +194,7 @@ jQuery.each( [ "ajaxStart", "ajaxStop", "ajaxComplete", "ajaxError", "ajaxSucces
 	};
 });
 
-jQuery.each( [ "get", "post" ], function( i, method ) {
+jQuery.each( [ "get", "post", "put", "delete" ], function( i, method ) {
 	jQuery[ method ] = function( url, data, callback, type ) {
 		// shift arguments if data argument was omitted
 		if ( jQuery.isFunction( data ) ) {
